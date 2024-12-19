@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "https://wikigods.github.io/my-react-app",
   plugins: [react()],
+  root: './',  // Asegúrate de que sea la raíz de tu proyecto
+  build: {
+    outDir: 'dist',  // La carpeta donde se generará el build
+  }
 })
